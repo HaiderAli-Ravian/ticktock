@@ -79,4 +79,4 @@ Runs 3 test suites (12 tests total):
 
 ## Time spent
 
-Approximately 24 hours.
+Approximately ~13 hours.
