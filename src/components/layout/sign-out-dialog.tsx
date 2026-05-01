@@ -1,6 +1,8 @@
 "use client"
 
+import { Loader2Icon } from "lucide-react"
 import { signOut } from "next-auth/react"
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import {
   Dialog,
@@ -16,6 +18,13 @@ interface SignOutDialogProps {
 }
 
 export function SignOutDialog({ open, onOpenChange }: SignOutDialogProps) {
+  const [isSigningOut, setIsSigningOut] = useState(false)
+
+  async function handleSignOut() {
+    setIsSigningOut(true)
+    await signOut({ callbackUrl: "/login" })
+  }
+
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-[calc(100%-2rem)] gap-5 sm:max-w-md">
@@ -30,14 +39,20 @@ export function SignOutDialog({ open, onOpenChange }: SignOutDialogProps) {
         <DialogFooter className="gap-3 bg-white sm:justify-stretch">
           <Button
             type="button"
+            disabled={isSigningOut}
             className="h-10 flex-1 rounded-lg bg-blue-600 text-sm font-medium text-white shadow-none hover:bg-blue-700"
-            onClick={() => signOut({ callbackUrl: "/login" })}
+            onClick={handleSignOut}
           >
-            Sign out
+            {isSigningOut ? (
+              <Loader2Icon className="size-4 animate-spin" />
+            ) : (
+              "Sign out"
+            )}
           </Button>
           <Button
             type="button"
             variant="outline"
+            disabled={isSigningOut}
             className="h-10 flex-1 rounded-lg border-slate-300 bg-white text-sm font-medium text-slate-950 shadow-none hover:bg-slate-50"
             onClick={() => onOpenChange(false)}
           >
