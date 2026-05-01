@@ -160,7 +160,18 @@ export function TimesheetsTable() {
                           return (
                             <TableRow
                               key={week.id}
-                              className="h-[57px] border-slate-200 hover:bg-transparent"
+                              className="h-[57px] cursor-pointer border-slate-200 hover:bg-slate-50"
+                              tabIndex={0}
+                              onClick={() => router.push(`/timesheets/${week.id}`)}
+                              onKeyDown={(event) => {
+                                if (
+                                  event.key === "Enter" ||
+                                  event.key === " "
+                                ) {
+                                  event.preventDefault()
+                                  router.push(`/timesheets/${week.id}`)
+                                }
+                              }}
                             >
                               <TableCell className="bg-slate-50 px-2 text-base font-normal text-slate-800 sm:px-5">
                                 {week.weekNumber}
