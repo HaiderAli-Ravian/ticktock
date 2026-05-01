@@ -1,8 +1,10 @@
 "use client"
 
 import { ChevronDownIcon } from "lucide-react"
-import { signOut, useSession } from "next-auth/react"
+import { useSession } from "next-auth/react"
 import Link from "next/link"
+import { useState } from "react"
+import { SignOutDialog } from "@/components/layout/sign-out-dialog"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,6 +14,7 @@ import {
 
 export function SiteHeader() {
   const { data: session } = useSession()
+  const [logoutOpen, setLogoutOpen] = useState(false)
 
   return (
     <header className="sticky top-0 z-40 bg-white">
@@ -37,13 +40,13 @@ export function SiteHeader() {
             <ChevronDownIcon className="size-4 text-slate-500" />
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
-            <DropdownMenuItem
-              onClick={() => signOut({ callbackUrl: "/login" })}
-            >
+            <DropdownMenuItem onClick={() => setLogoutOpen(true)}>
               Sign out
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
+
+        <SignOutDialog open={logoutOpen} onOpenChange={setLogoutOpen} />
       </div>
     </header>
   )
