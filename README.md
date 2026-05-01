@@ -26,6 +26,10 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+## Live demo
+
+[https://ticktock-indol.vercel.app/](https://ticktock-indol.vercel.app/)
+
 ## Demo credentials
 
 | Email | Password |
@@ -58,7 +62,7 @@ src/
 
 - **No persistence**: All data lives in-memory for the server process lifetime. Restarting the dev server resets to the seed data.
 - **Status is derived**: `COMPLETED` ≥ 40 hrs, `INCOMPLETE` 1–39 hrs, `MISSING` 0 hrs. It is never stored.
-- **9 seed weeks** spanning January–February 2024 covering all three statuses.
+- **18 seed weeks** spanning January–April 2026 covering all three statuses.
 - **Next.js 16 specifics**: `middleware.ts` is replaced by `proxy.ts`; `params` and `searchParams` are fully async (must be awaited in pages/layouts/routes).
 - **Zod v4** and **date-fns v4** — APIs differ from v3; the codebase uses v4-compatible syntax throughout.
 
@@ -75,4 +79,4 @@ Runs 3 test suites (12 tests total):
 
 ## Time spent
 
-<!-- Fill in: -->
+Approximately 24 hours.

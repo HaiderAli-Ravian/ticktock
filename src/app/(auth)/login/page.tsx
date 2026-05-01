@@ -135,7 +135,7 @@ export default function LoginPage() {
 
       {/* Right — brand panel */}
       <div className="hidden flex-none items-center bg-blue-600 px-5 py-10 sm:px-8 md:flex md:min-h-screen md:flex-1 md:px-12 md:py-12">
-        <div className="max-w-sm space-y-4 text-white">
+        <div className="w-full max-w-2xl space-y-4 text-white">
           <p className="text-3xl font-bold tracking-tight sm:text-4xl">
             ticktock
           </p>
