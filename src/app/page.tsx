@@ -1,8 +1,11 @@
+import { redirect } from "next/navigation"
+import { auth } from "@/lib/auth"
 
-export default function Home() {
-  return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-4xl font-bold">Hello World</h1>
-    </div>
-  );
+export default async function RootPage() {
+  const session = await auth()
+  if (session) {
+    redirect("/timesheets")
+  } else {
+    redirect("/login")
+  }
 }
