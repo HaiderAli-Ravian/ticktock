@@ -1,3 +1,4 @@
+<img width="3024" height="1996" alt="screenshot_2026-10-01_raw (10)" src="https://github.com/user-attachments/assets/7d066fed-e4d7-47ea-b21b-7b85416700bb" />
 # ticktock
 
 A Next.js timesheet-dashboard assessment demonstrating weekly entries, query-driven UI, form validation, and focused tests.
