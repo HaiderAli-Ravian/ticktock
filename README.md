@@ -1,6 +1,3 @@
-<img width="3024" height="1996" alt="screenshot_2026-10-01_raw (10)" src="https://github.com/user-attachments/assets/7d066fed-e4d7-47ea-b21b-7b85416700bb" />
-# ticktock
-
 A Next.js timesheet-dashboard assessment demonstrating weekly entries, query-driven UI, form validation, and focused tests.
 
 Authentication uses a fixed demo user, and application data is stored in memory. Data resets when the server process restarts; this is not a production authentication or persistence implementation.
@@ -87,11 +84,18 @@ Approximately ~13 hours.
 
 ## Screenshots
 
-### Timesheet overview
+### Timesheet Listing overview
 
 Weekly status badges, date and status filters, and pagination using the fixed demo user and seeded timesheet data.
 
 <img width="3024" height="1722" alt="ticktock-timesheets" src="https://github.com/user-attachments/assets/71ee253d-df12-443c-8286-304043ad741d" />
+
+
+### Weekly Timesheet overview
+
+Weekly timesheet details with total hours completed each day.
+
+<img width="3024" height="1996" alt="screenshot_2026-10-01_raw (10)" src="https://github.com/user-attachments/assets/7d066fed-e4d7-47ea-b21b-7b85416700bb" />
 
 
 ### Time-entry dialog
