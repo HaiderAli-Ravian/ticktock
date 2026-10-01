@@ -1,6 +1,8 @@
 # ticktock
 
-A timesheet management web application for tracking weekly work hours across projects.
+A Next.js timesheet-dashboard assessment demonstrating weekly entries, query-driven UI, form validation, and focused tests.
+
+Authentication uses a fixed demo user, and application data is stored in memory. Data resets when the server process restarts; this is not a production authentication or persistence implementation.
 
 ## Stack
 
