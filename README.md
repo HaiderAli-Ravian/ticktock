@@ -91,3 +91,10 @@ Approximately ~13 hours.
 Weekly status badges, date and status filters, and pagination using the fixed demo user and seeded timesheet data.
 
 <img width="3024" height="1722" alt="ticktock-timesheets" src="https://github.com/user-attachments/assets/71ee253d-df12-443c-8286-304043ad741d" />
+
+
+### Time-entry dialog
+
+Project and work-type selection, task notes, and hour controls over the weekly timesheet. Shown with demonstration data; no entry was submitted for this capture.
+
+<img width="3024" height="1722" alt="ticktock-entry-dialog" src="https://github.com/user-attachments/assets/f6cb9b56-b8d8-4d4d-bab4-e84e6bb2131b" />
