@@ -82,3 +82,12 @@ Runs 3 test suites (12 tests total):
 ## Time spent
 
 Approximately ~13 hours.
+
+
+## Screenshots
+
+### Timesheet overview
+
+Weekly status badges, date and status filters, and pagination using the fixed demo user and seeded timesheet data.
+
+<img width="3024" height="1722" alt="ticktock-timesheets" src="https://github.com/user-attachments/assets/71ee253d-df12-443c-8286-304043ad741d" />
